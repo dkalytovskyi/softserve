@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="stage">
+        <div class="pyramid">
+            <div class="triangle side-1"></div>
+            <div class="triangle side-2"></div>
+            <div class="triangle side-3"></div>
+            <div class="triangle side-4"></div>
+        </div>
+        <div id="buttons">
+            <button type="button" id="low" onclick="changeSpeed(12);">Low speed</button>
+            <button type="button" id="medium" onclick="changeSpeed(6);">Medium speed</button>
+            <button type="button" id="high" onclick="changeSpeed(2);">High speed</button>
+        </div>
+    </div>
+<script>
+    const changeSpeed = (time) => {
+        document.getElementsByClassName("pyramid")[0].style.animation=`rotate ${time}s linear infinite`;
+    }
+</script>
+</body>
+</html>

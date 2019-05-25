@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form name="myForm">
+        <div>
+            <label for="uEmail">Email</label>
+            <input type="text" name="uEmail" id="uEmail" onfocus="firstEmailCheck();" oninput="checkEmail();">
+            <span id="emailValid"></span>
+        </div>
+        <div>
+            <label for="uPassword">Password</label>
+            <input type="password" name="uPassword" id="uPassword" onfocus="firstPasswordCheck();" oninput="checkPassword();">
+            <span id="passwordValid"></span>
+        </div>
+        <div>
+            <label for="uPassword2">Repeat your password</label>
+            <input type="password" name="uPassword2" id="uPassword2" onfocus="firstPassword2Check();" oninput="checkPassword2();">
+            <span id="password2Valid"></span>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
